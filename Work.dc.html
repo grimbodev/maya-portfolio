@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="./image-slot.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body { margin: 0; text-wrap: pretty; overflow-x: clip; }
+    a { color: #1F3B2C; text-decoration: none; }
+    a:hover { color: #C1703F; text-decoration: underline; }
+    ::selection { background: #DCE6D6; }
+    button { font-family: inherit; cursor: pointer; }
+    .client-track { scrollbar-width: none; -ms-overflow-style: none; }
+    .client-track::-webkit-scrollbar { display: none; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes pulseDot { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+  </style>
+</helmet>
+
+<div style="background: #F6F1E6; color: #24231F; font-family: 'Nunito', sans-serif; min-height: 100vh;">
+
+  <nav style="display:flex; align-items:center; justify-content:space-between; gap: 24px; padding: 22px clamp(20px, 5vw, 72px); border-bottom: 1px solid #E4DCC8;">
+    <a href="index.html" style="display:flex; align-items:center; gap:10px;">
+      <div style="display:grid; grid-template-columns: repeat(5, 3px); grid-template-rows: repeat(6, 3px); gap: 1px;">
+        <span></span><span style="background:#7E9479;"></span><span></span><span style="background:#7E9479;"></span><span></span>
+        <span style="background:#1F3B2C;"></span><span style="background:#7E9479;"></span><span style="background:#1F3B2C;"></span><span style="background:#7E9479;"></span><span style="background:#1F3B2C;"></span>
+        <span></span><span></span><span style="background:#1F3B2C;"></span><span></span><span></span>
+        <span style="background:#A9865C;"></span><span style="background:#A9865C;"></span><span style="background:#A9865C;"></span><span style="background:#A9865C;"></span><span style="background:#A9865C;"></span>
+        <span></span><span style="background:#8B6F47;"></span><span style="background:#8B6F47;"></span><span style="background:#8B6F47;"></span><span></span>
+        <span></span><span style="background:#8B6F47;"></span><span style="background:#8B6F47;"></span><span style="background:#8B6F47;"></span><span></span>
+      </div>
+      <span style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; color:#1F3B2C;">Maya Patten</span>
+    </a>
+    <div style="display:flex; align-items:center; gap: 28px;">
+      <a href="index.html" style="font-size:15px; font-weight:500; color:#24231F;">Home</a>
+      <a href="Work.dc.html" style="font-size:15px; font-weight:500; color:#24231F;">Work</a>
+      <button type="button" onclick="location.href='index.html#contact'" style="background:#1F3B2C; color:#F6F1E6; border:none; border-radius:10px; padding: 10px 20px; font-size:15px; font-weight:600; transition: transform 0.2s ease;" style-hover="background:#2C4E38; transform: translateY(-1px);">Let's talk</button>
+    </div>
+  </nav>
+
+  <div style="max-width: 1180px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 72px);">
+
+    <section style="padding: 64px 0 24px; animation: fadeUp 0.6s ease-out both;">
+      <span style="display:block; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: #4C6B4A; margin: 0 0 16px;">Work</span>
+      <h1 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size: clamp(32px, 4.4vw, 48px); line-height: 1.2; margin: 0; color:#1F3B2C;">Things I've had the pleasure of working on.</h1>
+      <p style="font-size: 17px; line-height: 1.65; max-width: 60ch; margin: 18px 0 0; color: #4A4941;">7+ years of experience in operations and production.</p>
+    </section>
+
+    <section style="padding: 32px 0 8px;">
+      <h2 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size: 22px; margin: 0 0 20px; color:#1F3B2C;">Work</h2>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px;">
+        <a href="Terrarium.dc.html" style="display:block; background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; text-decoration:none; color:inherit; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#EFE8D6; display:flex; align-items:center; justify-content:center; aspect-ratio: 16/10;">
+            <img src="https://cdn.modrinth.com/data/N42M457t/0b9eddf59f9dca4f84b8bcc07ca4f0913d2c2121_96.webp" alt="" style="width:72px; height:72px; border-radius:14px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#2C4A2A;">Founder</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">Terrarium</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">A game-modding studio I founded — 400M+ downloads across the mods and tools we've built and shipped.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="background:#7E9479; color:#F6F1E6; font-size:12px; font-weight:700; letter-spacing:0.03em; padding: 5px 11px; border-radius: 6px;">401.6M downloads</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">See all &rarr;</span>
+            </div>
+          </div>
+        </a>
+        <div style="background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#DCE6EC; display:flex; align-items:center; justify-content:center; gap:10px; aspect-ratio: 16/10;">
+            <img src="./assets/hoplite-logo.jpg" alt="" style="width:60px; height:60px; border-radius:12px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+            <span style="font-size:22px; font-weight:700; color:#2E5266;">+</span>
+            <img src="./assets/speedsilver-logo.jpg" alt="" style="width:60px; height:60px; border-radius:12px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#2E5266;">Operations Manager</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">SpeedSilver / Hoplite</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">Overseeing day-to-day operations for Hoplite, a competitive Minecraft server with 1.8M+ unique users all time.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Team management</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Process coordination</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#0D0D0D; display:flex; align-items:center; justify-content:center; aspect-ratio: 16/10;">
+            <img src="./assets/xpgames-logo.jpg" alt="" style="width:72px; height:72px; border-radius:14px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#2C4A2A;">Community Manager and QA</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">XP Games</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">Managed community engagement, tested feature implementation, and bridged players and the dev team.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Community building</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">QA testing</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#1F1F1F; display:flex; align-items:center; justify-content:center; aspect-ratio: 16/10;">
+            <img src="./assets/ender-logo.jpg" alt="" style="width:72px; height:72px; border-radius:14px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#2E5266;">Club Lead</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">Ender</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">Designed club structure, bridged Host and Development teams, and created 2000+ events for kids to enjoy.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Operational excellence</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Program design</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#F3E4C2; display:flex; align-items:center; justify-content:center; aspect-ratio: 16/10;">
+            <img src="./assets/checkpoint-logo.jpg" alt="" style="width:72px; height:72px; border-radius:14px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#6B2E43;">Production Manager</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">Checkpoint</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">Managed asset creation for videos, breaking scripts into the production pipeline for on-time, quality delivery.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Video production</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Quality control</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#F5EDE7; display:flex; align-items:center; justify-content:center; aspect-ratio: 16/10;">
+            <img src="./assets/playscape-logo.png" alt="" style="width:72px; height:72px; border-radius:14px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#6B2E43;">Small Business Owner</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">Playscape</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">Weekly small-group activities like Minecraft and Roblox for kids, led by vetted adult hosts. Leading strategy, operations, and team direction as CEO.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Leadership</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Strategy</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#2E5266; display:flex; align-items:center; justify-content:center; aspect-ratio: 16/10;">
+            <img src="./assets/talltalesrp-logo.jpg" alt="" style="width:72px; height:72px; border-radius:14px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#8A6414;">Staff Manager</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">TallTalesRP</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">Managed a team of 100+, designed task systems, and facilitated resolutions across every subsection lead.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">People management</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Notion</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#0A0F1F; display:flex; align-items:center; justify-content:center; aspect-ratio: 16/10;">
+            <img src="./assets/codestudios-logo.jpg" alt="" style="width:72px; height:72px; border-radius:14px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#2C4A2A;">Project Manager</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">CodeStudios</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">Crafting creativity, inspiring play — managing Minecraft add-on projects from concept to launch.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Production</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Add-ons</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#B23A2E; display:flex; align-items:center; justify-content:center; aspect-ratio: 16/10;">
+            <img src="./assets/giggleblock-logo.jpg" alt="" style="width:72px; height:72px; border-radius:14px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#8A6414;">Branch &amp; Project Manager</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">Giggle Block Studios</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">Managed a team section to reach deadlines, coordinate scheduling, and handle budgeting.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Operational excellence</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Time management</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#B23A2E; display:flex; align-items:center; justify-content:center; aspect-ratio: 16/10;">
+            <img src="./assets/igdaclark-logo.jpg" alt="" style="width:72px; height:72px; border-radius:14px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#8A6414;">President</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">IGDA Clark</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">Led the chapter's Game Jams, Expos, and workshops, connecting students with game dev professionals.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Event planning</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Budgeting</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#F0DEE3; display:flex; align-items:center; justify-content:center; aspect-ratio: 16/10;">
+            <img src="./assets/modrinth-logo-v3.png" alt="" style="width:72px; height:72px; border-radius:14px; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" />
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#2E5266;">Online Content Moderator</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">Modrinth</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">Project quality assurance across mods, modpacks, and resource packs for the community.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Quality assurance</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Community review</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#FBF7EE; border:1px solid #E4DCC8; border-radius:16px; overflow:hidden; transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-5px); box-shadow: 0 14px 28px rgba(31,59,44,0.14);">
+          <figure style="margin:0; background:#DCE6D6; display:flex; align-items:center; justify-content:center; aspect-ratio: 16/10;">
+            <div style="width:72px; height:72px; border-radius:14px; overflow:hidden;"><img src="./assets/slimeware-logo.jpg" alt="" style="width:100%; height:100%; object-fit:cover; filter:drop-shadow(3px 4px 0 rgba(0,0,0,0.25));" /></div>
+          </figure>
+          <div style="padding: 22px;">
+            <span style="font-size:13px; font-weight:700; letter-spacing:0.04em; color:#2C4A2A;">Associate Producer &amp; Marketing Manager</span>
+            <h3 style="font-family:'Quicksand', sans-serif; font-weight:700; font-size:20px; margin: 8px 0 0; color:#1F3B2C;">SlimeWare</h3>
+            <p style="font-size:15px; line-height:1.6; margin: 10px 0 0; color:#4A4941;">Led production and marketing for the indie game Unsent, including showcases at PAX East.</p>
+            <div style="display:flex; flex-wrap:wrap; gap: 8px; margin-top: 14px;">
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Production</span>
+              <span style="border:1px solid #C7BF9F; color:#4A4941; font-size:12px; font-weight:600; padding:5px 11px; border-radius:999px;">Marketing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="padding: 32px 0; font-size: 13px; color: #8B8A7E;">
+      &copy; 2026 Maya Patten.
+    </footer>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1440}}">class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}</script>
+</body>
+</html>
